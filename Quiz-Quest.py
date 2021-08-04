@@ -13,7 +13,8 @@ while True:
         exit()
 # Contains the questions, correct answer and the other answers
 def Questions_and_Answers(question, correct_ans, ans):
-# Prints those questions and answers then ask the user for a response, if its right it congratulates them, if wrong it says gg no re
+# Prints those questions and answers then ask the user for a response, 
+# if it's right it congratulates them and adds to score, if wrong it says that they are wrong
     global score
     while True:
         print(question)
@@ -25,17 +26,14 @@ def Questions_and_Answers(question, correct_ans, ans):
             score += 1
             print(f'Your current score is {score} out of 15')
             return True
-        if response != ans:
-            print('Your answer needs to be one of the options')
         else:
-            print(f'You failed, your current score is still {score} out of 15.\nTry the next question')
+            print(f'You failed, your current score is {score} out of 15.\nTry the next question')
             return False
-
 
 # The questions and answers       
 q1 = Questions_and_Answers('Who is the Iron Revenant?', 'Mordekaiser', ['Mordekaiser', 'Garen', 'Kayn', 'Fiora'])
 q2 = Questions_and_Answers('What race is Rakan & Xayah?', 'Vastayan', ['Vastayan', 'Trolls', 'Titans', 'Vastayashai"Rei'])
-q3 = Questions_and_Answers('Which one of these characters was transmuted?','Warwick',['Singed','Le Blanc','Gragas','Warwick'])
+q3 = Questions_and_Answers('Which one of these characters was transmuted?','Warwick',['Singed','LeBlanc','Gragas','Warwick'])
 q4 = Questions_and_Answers('What is kassadins ultimate?','A quick teleport',['He launches himself','A quick teleport','Devours the target','Suppresses an enemy'])
 q5 = Questions_and_Answers('Which nation is the strongest?','Demacia',['Freljord','Ionia','Noxus','Demacia'])
 q6 = Questions_and_Answers('Which one of these champions is strongest is the lore?','Ornn',['Ornn','Aurelion Sol','Karma','Bard'])
@@ -43,33 +41,9 @@ q7 = Questions_and_Answers('Which one of these champions are sisters?','Kayle & 
 q8 = Questions_and_Answers('Which of these champions have a root ability?','Lux',['Galio','Teemo','Warwick','Lux'])
 q9 = Questions_and_Answers('Which of these champions are classed as a jungler?','Gragas',['Teemo','Renekton','Gragas','Zed'])
 q10 = Questions_and_Answers('Which of these champions were a couple','Illaoi & Gangplank',['Warwick & Volibear','Lucian & Poppy','Illaoi & Gangplank','Mordekaiser & Taric'])
-q11 = Questions_and_Answers('The ruined king is named Viego','true',['true','false'])
-q12 = Questions_and_Answers("Kayle's ultimate is called Devine Punishment",'false',['false','true'])
-q13 = Questions_and_Answers('','',['','','',''])
-q14 = Questions_and_Answers('','',['','','',''])
-q15 = Questions_and_Answers('','',['','','',''])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#   while True:
- #       if score == 1 or 2 or 3:
-  #          print(f"Congratulations, you got a whopping score of {score}, you are worse than a 3 year old child guessing.")
-   #     if score == 4 or 5 or 6:
-    #        print(f"Congratulations, you got a whopping score of {score}, you are worse than a 6 year old child with parkinsons trying to aim a squirt gun.")
-     #   if score == 7 or 8 or 9:
-      #      print(f"Congratulations, you got a whopping score of {score}, you are worse than a 9 year old child trying to bake a cake on their own.")
-       # if score == 10 or 11 or 12:
-        #    print(f"Congratulations, you got a whopping score of {score}, you are worse than a 12 year old trying to cheat on his math quiz.")
-        #if score == 13 or 14 or 15:
-         #   print(f"Congratulations, you got a whopping score of {score}, you have utterly too much time on your hands and should probably get help.")
+q11 = Questions_and_Answers('The ruined king is named Viego','True',['True','False'])
+q12 = Questions_and_Answers("Kayle's ultimate is called Devine Punishment",'False',['False','True'])
+q13 = Questions_and_Answers('Which one of these characters is most hated?','Teemo',['Teemo','Fizz','Master Yi','Lux'])
+q14 = Questions_and_Answers('How many champions summon a creature as their ultimate?','3',['2','3','5','7'])
+q15 = Questions_and_Answers("When was League of Legends made?",'27 October 2009',['October 27 2009','April 20 1969','September 11 2001','Donald Trumps birthday'])
+print(f"Thank you for playing, your final score was {score}, have a good day.")
