@@ -1,6 +1,0 @@
-Quiz Quest:
-Title printed w enter or exit choice
-enter or exit choice works
-15 questions, multi choice
-Score System, Correct = add 1 point, incorrect = no points
-print end score
